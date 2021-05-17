@@ -2,9 +2,9 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   labels:
-    app: cloudflare-status-exporter
+    app: name-of-status-exporter
     release: prom
-  name: cloudflare-status-exporter
+  name: name-of-status-exporter
   namespace: monitoring
 spec:
   endpoints:
@@ -15,4 +15,4 @@ spec:
     - monitoring
   selector:
     matchLabels:
-      app: cloudflare-status-exporter
+      app: name-of-status-exporter
